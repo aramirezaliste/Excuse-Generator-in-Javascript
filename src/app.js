@@ -16,28 +16,32 @@ window.onload = function() {
     "during my lunch",
     "while I was praying"
   ];
+  const randomNumbers = () => {
+    let numeroPrimero = Math.floor(Math.random() * 3);
+    let numeroSegundo = Math.floor(Math.random() * 3);
+    let numeroTercero = Math.floor(Math.random() * 3);
+    let numeroCuarto = Math.floor(Math.random() * 3);
 
-  let numeroPrimero = Math.floor(Math.random() * 3);
-  let numeroSegundo = Math.floor(Math.random() * 3);
-  let numeroTercero = Math.floor(Math.random() * 3);
-  let numeroCuarto = Math.floor(Math.random() * 3);
-
-  /*console.log(
-    who[numeroPrimero] +
+    return (
+      who[numeroPrimero] +
       " " +
       action[numeroSegundo] +
       " " +
       what[numeroTercero] +
       " " +
       when[numeroCuarto]
-  );*/
+    );
+  };
 
-  document.getElementById("excuse").innerHTML =
-    who[numeroPrimero] +
-    " " +
-    action[numeroSegundo] +
-    " " +
-    what[numeroTercero] +
-    " " +
-    when[numeroCuarto];
+  document.getElementById("excuse").innerHTML = randomNumbers();
 };
+
+/*console.log(
+who[numeroPrimero] +
+  " " +
+  action[numeroSegundo] +
+  " " +
+  what[numeroTercero] +
+  " " +
+  when[numeroCuarto]
+);*/
