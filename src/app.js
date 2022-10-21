@@ -19,8 +19,8 @@ window.onload = function() {
   const randomNumbers = () => {
     let numeroPrimero = Math.floor(Math.random() * 3);
     let numeroSegundo = Math.floor(Math.random() * 3);
-    let numeroTercero = Math.floor(Math.random() * 3);
-    let numeroCuarto = Math.floor(Math.random() * 3);
+    let numeroTercero = Math.floor(Math.random() * 2);
+    let numeroCuarto = Math.floor(Math.random() * 4);
 
     return (
       who[numeroPrimero] +
